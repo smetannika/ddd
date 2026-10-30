@@ -288,7 +288,7 @@ extends Screen {
             Render2D.rrectH(ms, 6.0f, sx, sy, sx + 26.0f, sy + 12.0f, Render2D.ca(Render2D.lerp(-13355969, -7643914, m.toggleAnim), ca), Render2D.ca(Render2D.lerp(-13355969, -13058568, m.toggleAnim), ca));
             float kx = sx + 1.5f + m.toggleAnim * 14.0f;
             Render2D.rrect(ms, 4.5f, kx, sy + 1.5f, kx + 9.0f, sy + 10.5f, Render2D.ca(-1, ca));
-            String string = this.binding == m ? "..." : (tag = m.key > 0 ? "[" + ClickGui.keyName(m.key) + "]" : "");
+            tag = this.binding == m ? "..." : (m.key > 0 ? "[" + ClickGui.keyName(m.key) + "]" : "");
             if (tag.isEmpty()) continue;
             this.text(ms, tag, sx - 6.0f - (float)this.textRenderer.getWidth(tag), ry + 9.0f, -7697764, ca);
         }
